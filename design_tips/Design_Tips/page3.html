@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3</title>
+    <style>
+      body{
+    background-color: beige;
+}
+
+.pages{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 600px;
+    width: 500px;
+    background-color: blue;
+    border: 5px outset black;
+}
+.page1{
+    border: 5px double black;
+    margin: 50px;
+    padding: 10px;
+    height:400px;
+    width: 385px;
+    background-color: rgb(255, 255, 255);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+button{
+    height: 40px;
+    width: 90px;
+    background-color: rgb(255, 51, 0);
+    color:white;
+    border: 3px inset white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+button:hover{
+    transition: ease-in 0.5s;
+    background-color: aliceblue;
+    color: blue;
+    border: 3px outset rgb(0, 0, 0);
+
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="pages">
+        <div class="page1">
+            <p>
+                03. Create easy to read website content "Readability" measures how easy it is for people to recognize
+                words, sentences, and phrases. When your site's readability is high, users will be able to effortlessly
+                scan, or skim-read, through it. This way, taking in the information becomes effortless.
+
+            </p>
+        </div>
+        <div class="btn">
+            <a href="page2.html">
+                <button type="submit"><b>Prev</b></button>
+            </a>
+            <a href="page4.html">
+                <button style="margin-left:10px;" type="submit"><b>Next</b></button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
