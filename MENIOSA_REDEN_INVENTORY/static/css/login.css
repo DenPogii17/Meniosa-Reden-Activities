@@ -1,0 +1,120 @@
+body.bg-light-green {
+    background: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.split-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-panel {
+    flex: 1;
+    background: linear-gradient(135deg, #2c3e50, #1a1a1a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.brand-section {
+    text-align: center;
+    color: white;
+}
+
+.brand-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #b88746, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.brand-tagline {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: white;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.login-card h2 {
+    font-weight: 600;
+    background: linear-gradient(45deg, #b88746, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-label {
+    color: #2c3e50;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.inp {
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.inp:focus {
+    border-color: #b88746;
+    box-shadow: 0 0 10px rgba(184, 135, 70, 0.2);
+    transform: translateY(-1px);
+}
+
+.btn-green {
+    background: linear-gradient(45deg, #b88746, #ffd700);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-green:hover {
+    background: linear-gradient(45deg, #ffd700, #b88746);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(184, 135, 70, 0.3);
+}
+
+.text-accent {
+    color: #b88746;
+    transition: all 0.3s ease;
+}
+
+.text-accent:hover {
+    color: #ffd700;
+}
+
+@media (max-width: 768px) {
+    .split-layout {
+        flex-direction: column;
+    }
+    
+    .left-panel {
+        min-height: 200px;
+    }
+    
+    .right-panel {
+        padding: 1rem;
+    }
+}

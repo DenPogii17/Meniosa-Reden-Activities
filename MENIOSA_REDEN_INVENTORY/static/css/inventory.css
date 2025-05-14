@@ -1,0 +1,161 @@
+/* Main Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, #2c3e50, #1a1a1a);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-header h3 {
+    color: #b88746;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.btn-logout {
+    background: transparent;
+    color: #b88746;
+    border: 1px solid #b88746;
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background: #b88746;
+    color: white;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f8f9fa;
+}
+
+/* Search Bar */
+.search-input {
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #b88746;
+    box-shadow: 0 0 10px rgba(184, 135, 70, 0.2);
+}
+
+/* Cards */
+.add-product-card, .table-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin-bottom: 2rem;
+}
+
+.card-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Form Elements */
+.custom-input {
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #b88746;
+    box-shadow: 0 0 10px rgba(184, 135, 70, 0.2);
+}
+
+.btn-add {
+    background: linear-gradient(45deg, #b88746, #ffd700);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-add:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(184, 135, 70, 0.3);
+}
+
+/* Table Styles */
+.custom-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.custom-table thead th {
+    background: linear-gradient(45deg, #2c3e50, #1a1a1a);
+    color: white;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.custom-table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+.modal-header {
+    background: linear-gradient(45deg, #2c3e50, #1a1a1a);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.btn-save {
+    background: linear-gradient(45deg, #b88746, #ffd700);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-cancel {
+    border: 1px solid #e0e0e0;
+    background: white;
+    color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+    
+    .main-content {
+        padding: 1rem;
+    }
+}
